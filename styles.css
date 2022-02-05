@@ -6,3 +6,133 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+html {
+  /* set font size for a base of 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-size: 7rem;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+  color: var(--color-body);
+  margin-bottom: 4.5rem;
+}
+.search-bar,
+p {
+  font-size: 2.2rem;
+}
+
+button {
+  background-color: var(--color-accent);
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+/* Navigation and Logo section */
+.logo {
+  font-size: 3.7rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+}
+.logo-img {
+  height: 5rem;
+  padding: 4.5rem 3rem;
+}
+
+/* Banner section */
+.banner {
+  padding-top: 100px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-btn {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+.banner-slogan {
+  letter-spacing: 0.4rem;
+}
+.banner-img-container {
+  background: linear-gradient(to bottom, black, white);
+}
+.banner-img {
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+  width: 100%;
+  background-color: black;
+}
+
+/* main */
+main {
+  padding: 0 3rem;
+}
+
+.search {
+  display: flex;
+  border-radius: 5rem;
+  padding: 0.5rem 0.5rem 0.5rem 5rem;
+  box-shadow: 0 0 8rem var(--color-body);
+}
+.search-bar {
+  border: none;
+  width: 100%;
+}
+.search-bar:focus {
+  outline: none;
+}
+.search-btn {
+  display: flex;
+  align-items: center;
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
+}
+.search-btn img {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
