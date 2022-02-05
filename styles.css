@@ -55,10 +55,6 @@ p {
   color: var(--color-body);
   margin-bottom: 4.5rem;
 }
-.search-bar,
-p {
-  font-size: 2.2rem;
-}
 
 button {
   background-color: var(--color-accent);
@@ -135,4 +131,28 @@ main {
 .search-btn img {
   width: 2.5rem;
   margin-right: 1rem;
+}
+
+/* Domain plan section */
+.domain-prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 4.5rem;
+  color: var(--color-headings);
+  font-weight: bold;
+  row-gap: 4rem;
+  column-gap: 6rem;
+}
+.domain-prices li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.domain-best-deal {
+  background-color: var(--color-secondary);
+  border-radius: 4rem;
+  color: #fff;
 }
