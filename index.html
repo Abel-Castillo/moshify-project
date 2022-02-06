@@ -15,10 +15,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
+    <nav class="menu">
       <div class="logo">
         <img class="logo-img" src="./images/logo.svg" alt="Moshify logo" />
       </div>
+      <img
+        class="menu-burger"
+        src="./icons/menu-white.png"
+        alt="Menu burger icon"
+      />
     </nav>
     <div class="banner">
       <h1 class="banner-header">Cloud Hosting for Pros</h1>
@@ -33,13 +38,15 @@
       </div>
     </div>
     <main>
-      <h2>The best webhosting starting at per month</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-        molestiae architecto nihil totam minima consequatur qui ratione, rem
-        eum.
-      </p>
-      <div class="search">
+      <div class="section-intro">
+        <h2>The best webhosting starting at per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          molestiae architecto nihil totam minima consequatur qui ratione, rem
+          eum.
+        </p>
+      </div>
+      <section class="search">
         <input
           class="search-bar"
           type="search"
@@ -48,7 +55,8 @@
         <button class="search-btn">
           <img src="./icons/search.svg" />search
         </button>
-      </div>
+      </section>
+
       <section class="domain-plans">
         <ul class="domain-prices">
           <li>.com $9.24</li>
@@ -59,6 +67,233 @@
           <li>.xyz $10.15</li>
         </ul>
       </section>
+      <section class="monthly-plans">
+        <div class="card">
+          <div class="card-header">
+            <p class="card-name">Entry</p>
+            <div class="card-cost">
+              <p>
+                <span class="card-price">$14</span>/month<span
+                  class="card-price-discount"
+                  >10% OFF</span
+                >
+              </p>
+            </div>
+            <p>Easy start on the cloud</p>
+          </div>
+          <div class="card-body">
+            <ul class="card-benefits">
+              <li>Unlimited Websites</li>
+              <li>Unlimited Bandwidth</li>
+              <li>100 GB SSD Storage</li>
+              <li>3 GB RAM</li>
+            </ul>
+            <button class="card-btn">Buy now</button>
+          </div>
+        </div>
+
+        <div class="card card-business">
+          <div class="card-header">
+            <p class="card-name">Business</p>
+            <div class="card-cost">
+              <p>
+                <span class="card-price">$24</span>/month<span
+                  class="card-price-discount"
+                  >20% OFF</span
+                >
+              </p>
+            </div>
+            <p>Optimal cloud experience</p>
+          </div>
+          <div class="card-body">
+            <ul class="card-benefits">
+              <li>Unlimited Websites</li>
+              <li>Unlimited Bandwidth</li>
+              <li>100 GB SSD Storage</li>
+              <li>3 GB RAM</li>
+              <li>2 CPU Cores</li>
+            </ul>
+            <button class="card-btn business-btn">Buy now</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <p class="card-name">Business</p>
+            <div class="card-cost">
+              <p>
+                <span class="card-price">$54</span>/month<span
+                  class="card-price-discount"
+                  >10% OFF</span
+                >
+              </p>
+            </div>
+            <p>Easy start on the cloud</p>
+          </div>
+          <div class="card-body">
+            <ul class="card-benefits">
+              <li>Unlimited Websites</li>
+              <li>Unlimited Bandwidth</li>
+              <li>100 GB SSD Storage</li>
+              <li>3 GB RAM</li>
+              <li>2 CPU Cores</li>
+            </ul>
+            <button class="card-btn">Buy now</button>
+          </div>
+        </div>
+      </section>
+      <div class="section-intro">
+        <h2>Host on the cloud to keep growing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          aspernatur!
+        </p>
+      </div>
+      <div>
+        <img class="section-icon" src="./icons/easy.svg" alt="" />
+        <h3>Super Easy to Use</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+          voluptas saepe assumenda ullam, exercitationem debitis impedit iste
+          dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
+          Laborum, dicta a. Veniam.
+        </p>
+        <p class="learn-more">Learn more &#8594;</p>
+        <img
+          class="webhost-img"
+          src="./images/easy.jpg"
+          alt="Easy to use dashboard"
+        />
+      </div>
+      <div>
+        <img class="section-icon" src="./icons/computer.svg" alt="" />
+        <h3>Simply fast websites</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+          voluptas saepe assumenda ullam, exercitationem debitis impedit iste
+          dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
+          Laborum, dicta a. Veniam.
+        </p>
+        <p class="learn-more">Learn more &#8594;</p>
+        <img
+          class="webhost-img"
+          src="./images/fast.jpg"
+          alt="Fast web servers"
+        />
+      </div>
+      <div>
+        <img class="section-icon" src="./icons/settings.svg" alt="" />
+        <h3>WordPress made easy</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptate
+          cum accusamus porro laboriosam animi tempora pariatur, beatae
+          explicabo non similique illo magni consequatur obcaecati illum tenetur
+          officiis incidunt veritatis commodi facere, provident numquam, omnis
+          aperiam. Alias voluptatem ipsam nemo nam sed ut animi. Consequuntur
+          aspernatur assumenda sunt magnam repellat.
+        </p>
+        <p class="learn-more">Learn more &#8594;</p>
+        <img
+          class="webhost-img"
+          src="./images/wordpress.jpg"
+          alt="WordPress webpage"
+        />
+      </div>
+      <div>
+        <img class="section-icon" src="./icons/clock.svg" alt="" />
+        <h3>24/7 expert support</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias
+          earum consequatur sit! Perspiciatis expedita, doloribus quia porro
+          cupiditate rerum delectus atque eveniet esse eaque, saepe est nulla
+          totam voluptates. Quod iste voluptates, error dolores ipsum eaque,
+          praesentium dignissimos dolore, ab facere labore nihil earum?
+        </p>
+        <p class="learn-more">Learn more &#8594;</p>
+        <img
+          class="webhost-img"
+          src="./images/support.jpg"
+          alt="Tech support 24/7"
+        />
+      </div>
     </main>
+    <section class="user-friendly">
+      <h2>User-friendly control panel</h2>
+      <img
+        class="user-friendly-img"
+        src="./images/ipad.png"
+        alt="User-friendly mobile"
+      />
+      <div class="user-friendly-benefits">
+        <img class="user-friendly-icon" src="./icons/snap.svg" alt="Snap" />
+        <div>
+          <h3>Easy start & managed updates</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, fugit
+            nesciunt cum perspiciatis cupiditate nulla beatae exercitationem
+            atque explicabo pariatur nam nisi numquam alias odio!
+          </p>
+        </div>
+      </div>
+      <div class="user-friendly-benefits">
+        <img class="user-friendly-icon" src="./icons/growth.svg" alt="Snap" />
+        <div>
+          <h3>Easy start & managed updates</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, fugit
+            nesciunt cum perspiciatis cupiditate nulla beatae exercitationem
+            atque explicabo pariatur nam nisi numquam alias odio!
+          </p>
+        </div>
+      </div>
+      <div class="user-friendly-benefits">
+        <img
+          class="user-friendly-icon"
+          src="./icons/wordpress.svg"
+          alt="Snap"
+        />
+        <div>
+          <h3>Easy start & managed updates</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, fugit
+            nesciunt cum perspiciatis cupiditate nulla beatae exercitationem
+            atque explicabo pariatur nam nisi numquam alias odio!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <div class="section-intro">
+        <h2>What our customer are saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+          aspernatur!
+        </p>
+      </div>
+      <div class="customer-img">
+        <img src="./images/testimonial.jpg" alt="" />
+        <div class="customer-quotes">
+          <img
+            class="customer-quotes-icon"
+            src="./icons/quotes.svg"
+            alt="quotes"
+          />
+        </div>
+        <div class="customer-text">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+            explicabo facere voluptas, natus dolorem veritatis dolor veniam,
+            reiciendis corrupti laudantium minus ipsam? Libero ratione
+            temporibus inventore architecto, soluta maiores eveniet.
+          </p>
+          <div class="customer-name">
+            <img src="./icons/line.svg" alt="line" />
+            <div>
+              <h3>Jhone Lumeo</h3>
+              <p>Mosh Company CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
