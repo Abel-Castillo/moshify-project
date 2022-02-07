@@ -28,7 +28,7 @@
     <div class="banner">
       <h1 class="banner-header">Cloud Hosting for Pros</h1>
       <p class="banner-slogan">Deploy your website in less than 60 seconds.</p>
-      <button class="banner-btn">Get started</button>
+      <button class="btn banner-btn btn--big btn--accent">Get started</button>
       <div class="banner-img-container">
         <img
           class="banner-img"
@@ -46,21 +46,23 @@
           eum.
         </p>
       </div>
-      <section class="search">
+      <section class="search box-shadow">
         <input
           class="search-bar"
           type="search"
           placeholder="Enter domain name here..."
         />
-        <button class="search-btn">
-          <img src="./icons/search.svg" />search
+        <button class="btn search-btn btn--big btn--accent">
+          <svg class='icon icon--search'>
+            <use xlink:href='./icons/search.svg#search'></use>
+          </svg> search
         </button>
       </section>
 
       <section class="domain-plans">
         <ul class="domain-prices">
           <li>.com $9.24</li>
-          <li class="domain-best-deal">.sg $7.91</li>
+          <li class="domain--special btn btn--small btn--secondary">.sg $7.91</li>
           <li>.space $12.98</li>
           <li>.info $14.15</li>
           <li>.net $16.15</li>
@@ -68,13 +70,13 @@
         </ul>
       </section>
       <section class="monthly-plans">
-        <div class="card">
+        <div class="card box-shadow">
           <div class="card-header">
             <p class="card-name">Entry</p>
             <div class="card-cost">
               <p>
                 <span class="card-price">$14</span>/month<span
-                  class="card-price-discount"
+                  class="btn btn--primary btn--small"
                   >10% OFF</span
                 >
               </p>
@@ -82,17 +84,17 @@
             <p>Easy start on the cloud</p>
           </div>
           <div class="card-body">
-            <ul class="card-benefits">
-              <li>Unlimited Websites</li>
-              <li>Unlimited Bandwidth</li>
-              <li>100 GB SSD Storage</li>
-              <li>3 GB RAM</li>
+            <ul class="list--tick">
+              <li class='list--tick__item'>Unlimited Websites</li>
+              <li class='list--tick__item'>Unlimited Bandwidth</li>
+              <li class='list--tick__item'>100 GB SSD Storage</li>
+              <li class='list--tick__item'>3 GB RAM</li>
             </ul>
-            <button class="card-btn">Buy now</button>
+            <button class="btn card-btn btn--big">Buy now</button>
           </div>
         </div>
 
-        <div class="card card-business">
+        <div class="card card-business box-shadow">
           <div class="card-header">
             <p class="card-name">Business</p>
             <div class="card-cost">
@@ -105,18 +107,18 @@
             </div>
             <p>Optimal cloud experience</p>
           </div>
-          <div class="card-body">
-            <ul class="card-benefits">
-              <li>Unlimited Websites</li>
-              <li>Unlimited Bandwidth</li>
-              <li>100 GB SSD Storage</li>
-              <li>3 GB RAM</li>
-              <li>2 CPU Cores</li>
+          <div class="card-body card-body-business">
+            <ul class="list--tick">
+              <li class='list--tick__item'>Unlimited Websites</li>
+              <li class='list--tick__item'>Unlimited Bandwidth</li>
+              <li class='list--tick__item'>100 GB SSD Storage</li>
+              <li class='list--tick__item'>3 GB RAM</li>
+              <li class='list--tick__item'>2 CPU Cores</li>
             </ul>
-            <button class="card-btn business-btn">Buy now</button>
+            <button class="btn card-btn business-btn btn--big">Buy now</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card box-shadow">
           <div class="card-header">
             <p class="card-name">Business</p>
             <div class="card-cost">
@@ -130,14 +132,14 @@
             <p>Easy start on the cloud</p>
           </div>
           <div class="card-body">
-            <ul class="card-benefits">
-              <li>Unlimited Websites</li>
-              <li>Unlimited Bandwidth</li>
-              <li>100 GB SSD Storage</li>
-              <li>3 GB RAM</li>
-              <li>2 CPU Cores</li>
+            <ul class="list--tick">
+              <li class='list--tick__item'>Unlimited Websites</li>
+              <li class='list--tick__item'>Unlimited Bandwidth</li>
+              <li class='list--tick__item'>100 GB SSD Storage</li>
+              <li class='list--tick__item'>3 GB RAM</li>
+              <li class='list--tick__item'>2 CPU Cores</li>
             </ul>
-            <button class="card-btn">Buy now</button>
+            <button class="btn card-btn btn--big">Buy now</button>
           </div>
         </div>
       </section>
@@ -148,67 +150,101 @@
           aspernatur!
         </p>
       </div>
-      <div>
-        <img class="section-icon" src="./icons/easy.svg" alt="" />
-        <h3>Super Easy to Use</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-          voluptas saepe assumenda ullam, exercitationem debitis impedit iste
-          dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
-          Laborum, dicta a. Veniam.
-        </p>
-        <p class="learn-more">Learn more &#8594;</p>
+      <div class='section-container'>
+        
+          <div class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="./icons/easy.svg#easy"></use>
+            </svg>
+          </div>
+          <div>
+            <h3 class="align-left">Super Easy to Use</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              voluptas saepe assumenda ullam, exercitationem debitis impedit iste
+              dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
+              Laborum, dicta a. Veniam.
+            </p>
+            <a href='#' class="link-arrow">Learn more</a>
+          </div>
+        
         <img
           class="webhost-img"
           src="./images/easy.jpg"
           alt="Easy to use dashboard"
         />
       </div>
-      <div>
-        <img class="section-icon" src="./icons/computer.svg" alt="" />
-        <h3>Simply fast websites</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-          voluptas saepe assumenda ullam, exercitationem debitis impedit iste
-          dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
-          Laborum, dicta a. Veniam.
-        </p>
-        <p class="learn-more">Learn more &#8594;</p>
-        <img
-          class="webhost-img"
-          src="./images/fast.jpg"
-          alt="Fast web servers"
-        />
+
+      <div class='section-container'>
+        
+          <div class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="./icons/computer.svg#computer"></use>
+            </svg>
+          </div>
+          <div>
+          <h3 class='align-left'>Simply fast websites</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+            voluptas saepe assumenda ullam, exercitationem debitis impedit iste
+            dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
+            Laborum, dicta a. Veniam.
+          </p>
+          <a href='#' class="link-arrow">Learn more</a>
+          </div>
+          
+          <img
+            class="webhost-img"
+            src="./images/fast.jpg"
+            alt="Fast web servers"
+          />
+        </div>
       </div>
-      <div>
-        <img class="section-icon" src="./icons/settings.svg" alt="" />
-        <h3>WordPress made easy</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptate
-          cum accusamus porro laboriosam animi tempora pariatur, beatae
-          explicabo non similique illo magni consequatur obcaecati illum tenetur
-          officiis incidunt veritatis commodi facere, provident numquam, omnis
-          aperiam. Alias voluptatem ipsam nemo nam sed ut animi. Consequuntur
-          aspernatur assumenda sunt magnam repellat.
-        </p>
-        <p class="learn-more">Learn more &#8594;</p>
+      <div class='section-container'>
+        
+          <div class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="./icons/wordpress.svg#wordpress"></use>
+            </svg>
+          </div>
+          <div>
+            <h3 class="align-left">WordPress made easy</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptate
+              cum accusamus porro laboriosam animi tempora pariatur, beatae
+              explicabo non similique illo magni consequatur obcaecati illum tenetur
+              officiis incidunt veritatis commodi facere, provident numquam, omnis
+              aperiam. Alias voluptatem ipsam nemo nam sed ut animi. Consequuntur
+              aspernatur assumenda sunt magnam repellat.
+            </p>
+            <a href='#' class="link-arrow">Learn more</a>
+          </div>
+        
         <img
           class="webhost-img"
           src="./images/wordpress.jpg"
           alt="WordPress webpage"
         />
       </div>
-      <div>
-        <img class="section-icon" src="./icons/clock.svg" alt="" />
-        <h3>24/7 expert support</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias
-          earum consequatur sit! Perspiciatis expedita, doloribus quia porro
-          cupiditate rerum delectus atque eveniet esse eaque, saepe est nulla
-          totam voluptates. Quod iste voluptates, error dolores ipsum eaque,
-          praesentium dignissimos dolore, ab facere labore nihil earum?
-        </p>
-        <p class="learn-more">Learn more &#8594;</p>
+      <div class='section-container'>
+        
+          <div class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="./icons/clock.svg#clock"></use>
+            </svg>
+          </div>
+          <div>
+            <h3 class='align-left'>24/7 expert support</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias
+              earum consequatur sit! Perspiciatis expedita, doloribus quia porro
+              cupiditate rerum delectus atque eveniet esse eaque, saepe est nulla
+              totam voluptates. Quod iste voluptates, error dolores ipsum eaque,
+              praesentium dignissimos dolore, ab facere labore nihil earum?
+            </p>
+            <a href='#' class="link-arrow">Learn more</a>
+          </div>
+        
         <img
           class="webhost-img"
           src="./images/support.jpg"
