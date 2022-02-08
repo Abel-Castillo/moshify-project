@@ -15,317 +15,343 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="menu">
-      <div class="logo">
-        <img class="logo-img" src="./images/logo.svg" alt="Moshify logo" />
-      </div>
-      <img
-        class="menu-burger"
-        src="./icons/menu-white.png"
-        alt="Menu burger icon"
-      />
-    </nav>
-    <div class="banner">
-      <h1 class="banner-header">Cloud Hosting for Pros</h1>
-      <p class="banner-slogan">Deploy your website in less than 60 seconds.</p>
-      <button class="btn banner-btn btn--big btn--accent">Get started</button>
-      <div class="banner-img-container">
-        <img
-          class="banner-img"
-          src="./images/banner.png"
-          alt="Moshify banner with web servers."
-        />
+    <div class="container--banner">
+      <div class="container--narrow">
+        <nav class="menu">
+          <div class="logo">
+            <img class="logo-img" src="./images/logo.svg" alt="Moshify logo" />
+          </div>
+          <svg class="icon menu-burger">
+            <use xlink:href="./icons/menu.svg#menu"></use>
+          </svg>
+
+          <ul class="menu--list">
+            <li>Hosting</li>
+            <li>VPS</li>
+            <li>Domain</li>
+            <li>Pricing</li>
+          </ul>
+        </nav>
+        <div class="banner">
+          <div class="banner--heading">
+            <h1 class="align-center">Cloud Hosting for Pros</h1>
+            <p class="banner-slogan">
+              Deploy your website in less than 60 seconds.
+            </p>
+            <button class="btn banner-btn btn--big btn--accent">
+              Get started
+            </button>
+          </div>
+
+          <div>
+            <img
+              class="banner-img full-width"
+              src="./images/banner.png"
+              alt="Moshify banner with web servers."
+            />
+          </div>
+        </div>
       </div>
     </div>
     <main>
-      <div class="section-intro">
-        <h2>The best webhosting starting at per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-          molestiae architecto nihil totam minima consequatur qui ratione, rem
-          eum.
-        </p>
-      </div>
-      <section class="search box-shadow">
-        <input
-          class="search-bar"
-          type="search"
-          placeholder="Enter domain name here..."
-        />
-        <button class="btn search-btn btn--big btn--accent">
-          <svg class='icon icon--search'>
-            <use xlink:href='./icons/search.svg#search'></use>
-          </svg> search
-        </button>
-      </section>
-
-      <section class="domain-plans">
-        <ul class="domain-prices">
-          <li>.com $9.24</li>
-          <li class="domain--special btn btn--small btn--secondary">.sg $7.91</li>
-          <li>.space $12.98</li>
-          <li>.info $14.15</li>
-          <li>.net $16.15</li>
-          <li>.xyz $10.15</li>
-        </ul>
-      </section>
-      <section class="monthly-plans">
-        <div class="card box-shadow">
-          <div class="card-header">
-            <p class="card-name">Entry</p>
-            <div class="card-cost">
-              <p>
-                <span class="card-price">$14</span>/month<span
-                  class="btn btn--primary btn--small"
-                  >10% OFF</span
-                >
-              </p>
-            </div>
-            <p>Easy start on the cloud</p>
-          </div>
-          <div class="card-body">
-            <ul class="list--tick">
-              <li class='list--tick__item'>Unlimited Websites</li>
-              <li class='list--tick__item'>Unlimited Bandwidth</li>
-              <li class='list--tick__item'>100 GB SSD Storage</li>
-              <li class='list--tick__item'>3 GB RAM</li>
-            </ul>
-            <button class="btn card-btn btn--big">Buy now</button>
-          </div>
+      <div class="container--narrow">
+        <div class="section-intro">
+          <h2>The best webhosting starting at per month</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+            molestiae architecto nihil totam minima consequatur qui ratione, rem
+            eum.
+          </p>
         </div>
-
-        <div class="card card-business box-shadow">
-          <div class="card-header">
-            <p class="card-name">Business</p>
-            <div class="card-cost">
-              <p>
-                <span class="card-price">$24</span>/month<span
-                  class="card-price-discount"
-                  >20% OFF</span
-                >
-              </p>
+        <section class="search box-shadow">
+          <input
+            class="search-bar full-width"
+            type="search"
+            placeholder="Enter domain name here..."
+          />
+          <button class="btn search-btn btn--big btn--accent">
+            <svg class="icon icon--search">
+              <use xlink:href="./icons/search.svg#search"></use>
+            </svg>
+            search
+          </button>
+        </section>
+        <section class="domain-plans">
+          <ul class="domain-prices">
+            <li>.com $9.24</li>
+            <li class="domain--special btn btn--small btn--secondary">
+              .sg $7.91
+            </li>
+            <li>.space $12.98</li>
+            <li>.info $14.15</li>
+            <li>.net $16.15</li>
+            <li>.xyz $10.15</li>
+          </ul>
+        </section>
+        <section class="monthly-plans">
+          <div class="card box-shadow">
+            <div class="card-header">
+              <p class="card-name">Entry</p>
+              <div class="card-cost">
+                <p>
+                  <span class="card-price">$14</span>/month<span
+                    class="btn btn--primary btn--small"
+                    >10% OFF</span
+                  >
+                </p>
+              </div>
+              <p>Easy start on the cloud</p>
             </div>
-            <p>Optimal cloud experience</p>
-          </div>
-          <div class="card-body card-body-business">
-            <ul class="list--tick">
-              <li class='list--tick__item'>Unlimited Websites</li>
-              <li class='list--tick__item'>Unlimited Bandwidth</li>
-              <li class='list--tick__item'>100 GB SSD Storage</li>
-              <li class='list--tick__item'>3 GB RAM</li>
-              <li class='list--tick__item'>2 CPU Cores</li>
-            </ul>
-            <button class="btn card-btn business-btn btn--big">Buy now</button>
-          </div>
-        </div>
-        <div class="card box-shadow">
-          <div class="card-header">
-            <p class="card-name">Business</p>
-            <div class="card-cost">
-              <p>
-                <span class="card-price">$54</span>/month<span
-                  class="card-price-discount"
-                  >10% OFF</span
-                >
-              </p>
+            <div class="card-body">
+              <ul class="list--tick">
+                <li class="list--tick__item">Unlimited Websites</li>
+                <li class="list--tick__item">Unlimited Bandwidth</li>
+                <li class="list--tick__item">100 GB SSD Storage</li>
+                <li class="list--tick__item">3 GB RAM</li>
+              </ul>
+              <button class="full-width btn card-btn btn--big">Buy now</button>
             </div>
-            <p>Easy start on the cloud</p>
           </div>
-          <div class="card-body">
-            <ul class="list--tick">
-              <li class='list--tick__item'>Unlimited Websites</li>
-              <li class='list--tick__item'>Unlimited Bandwidth</li>
-              <li class='list--tick__item'>100 GB SSD Storage</li>
-              <li class='list--tick__item'>3 GB RAM</li>
-              <li class='list--tick__item'>2 CPU Cores</li>
-            </ul>
-            <button class="btn card-btn btn--big">Buy now</button>
+          <div class="card box-shadow">
+            <div class="card-header card-header-primary">
+              <p class="card-name">Business</p>
+              <div class="card-cost">
+                <p>
+                  <span class="card-price">$24</span>/month<span
+                    class="btn btn--secondary btn--small"
+                    >20% OFF</span
+                  >
+                </p>
+              </div>
+              <p>Optimal cloud experience</p>
+            </div>
+            <div class="card-body card-body-business">
+              <ul class="list--tick">
+                <li class="list--tick__item">Unlimited Websites</li>
+                <li class="list--tick__item">Unlimited Bandwidth</li>
+                <li class="list--tick__item">100 GB SSD Storage</li>
+                <li class="list--tick__item">3 GB RAM</li>
+                <li class="list--tick__item">2 CPU Cores</li>
+              </ul>
+              <button class="full-width btn card-btn card-btn-primary btn--big">
+                Buy now
+              </button>
+            </div>
           </div>
+          <div class="card box-shadow">
+            <div class="card-header">
+              <p class="card-name">Business</p>
+              <div class="card-cost">
+                <p>
+                  <span class="card-price">$54</span>/month<span
+                    class="btn btn--primary btn--small"
+                    >10% OFF</span
+                  >
+                </p>
+              </div>
+              <p>Easy start on the cloud</p>
+            </div>
+            <div class="card-body">
+              <ul class="list--tick">
+                <li class="list--tick__item">Unlimited Websites</li>
+                <li class="list--tick__item">Unlimited Bandwidth</li>
+                <li class="list--tick__item">100 GB SSD Storage</li>
+                <li class="list--tick__item">3 GB RAM</li>
+                <li class="list--tick__item">2 CPU Cores</li>
+              </ul>
+              <button class="full-width btn card-btn btn--big">Buy now</button>
+            </div>
+          </div>
+        </section>
+        <div class="section-intro">
+          <h2>Host on the cloud to keep growing</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            aspernatur!
+          </p>
         </div>
-      </section>
-      <div class="section-intro">
-        <h2>Host on the cloud to keep growing</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          aspernatur!
-        </p>
-      </div>
-      <div class='section-container'>
-        
+        <div class="section-container">
           <div class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="./icons/easy.svg#easy"></use>
             </svg>
           </div>
           <div>
-            <h3 class="align-left">Super Easy to Use</h3>
+            <h3>Super Easy to Use</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-              voluptas saepe assumenda ullam, exercitationem debitis impedit iste
-              dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
-              Laborum, dicta a. Veniam.
+              voluptas saepe assumenda ullam, exercitationem debitis impedit
+              iste dolor illo reiciendis reprehenderit labore ea sint, inventore
+              odio. Laborum, dicta a. Veniam.
             </p>
-            <a href='#' class="link-arrow">Learn more</a>
+            <a href="#" class="link-arrow">Learn more</a>
           </div>
-        
-        <img
-          class="webhost-img"
-          src="./images/easy.jpg"
-          alt="Easy to use dashboard"
-        />
-      </div>
 
-      <div class='section-container'>
-        
+          <img
+            class="full-width"
+            src="./images/easy.jpg"
+            alt="Easy to use dashboard"
+          />
+        </div>
+        <div class="section-container">
           <div class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="./icons/computer.svg#computer"></use>
             </svg>
           </div>
           <div>
-          <h3 class='align-left'>Simply fast websites</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-            voluptas saepe assumenda ullam, exercitationem debitis impedit iste
-            dolor illo reiciendis reprehenderit labore ea sint, inventore odio.
-            Laborum, dicta a. Veniam.
-          </p>
-          <a href='#' class="link-arrow">Learn more</a>
+            <h3>Simply fast websites</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              voluptas saepe assumenda ullam, exercitationem debitis impedit
+              iste dolor illo reiciendis reprehenderit labore ea sint, inventore
+              odio. Laborum, dicta a. Veniam.
+            </p>
+            <a href="#" class="link-arrow">Learn more</a>
           </div>
-          
+
           <img
-            class="webhost-img"
+            class="full-width"
             src="./images/fast.jpg"
             alt="Fast web servers"
           />
         </div>
-      </div>
-      <div class='section-container'>
-        
+        <div class="section-container">
           <div class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="./icons/wordpress.svg#wordpress"></use>
             </svg>
           </div>
           <div>
-            <h3 class="align-left">WordPress made easy</h3>
+            <h3>WordPress made easy</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptate
-              cum accusamus porro laboriosam animi tempora pariatur, beatae
-              explicabo non similique illo magni consequatur obcaecati illum tenetur
-              officiis incidunt veritatis commodi facere, provident numquam, omnis
-              aperiam. Alias voluptatem ipsam nemo nam sed ut animi. Consequuntur
-              aspernatur assumenda sunt magnam repellat.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+              voluptate cum accusamus porro laboriosam animi tempora pariatur,
+              beatae explicabo non similique illo magni consequatur obcaecati
+              illum tenetur officiis incidunt veritatis commodi facere,
+              provident numquam, omnis aperiam. Alias voluptatem ipsam nemo nam
+              sed ut animi. Consequuntur aspernatur assumenda sunt magnam
+              repellat.
             </p>
-            <a href='#' class="link-arrow">Learn more</a>
+            <a href="#" class="link-arrow">Learn more</a>
           </div>
-        
-        <img
-          class="webhost-img"
-          src="./images/wordpress.jpg"
-          alt="WordPress webpage"
-        />
-      </div>
-      <div class='section-container'>
-        
+
+          <img
+            class="full-width"
+            src="./images/wordpress.jpg"
+            alt="WordPress webpage"
+          />
+        </div>
+        <div class="section-container">
           <div class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="./icons/clock.svg#clock"></use>
             </svg>
           </div>
           <div>
-            <h3 class='align-left'>24/7 expert support</h3>
+            <h3>24/7 expert support</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias
-              earum consequatur sit! Perspiciatis expedita, doloribus quia porro
-              cupiditate rerum delectus atque eveniet esse eaque, saepe est nulla
-              totam voluptates. Quod iste voluptates, error dolores ipsum eaque,
-              praesentium dignissimos dolore, ab facere labore nihil earum?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              alias earum consequatur sit! Perspiciatis expedita, doloribus quia
+              porro cupiditate rerum delectus atque eveniet esse eaque, saepe
+              est nulla totam voluptates. Quod iste voluptates, error dolores
+              ipsum eaque, praesentium dignissimos dolore, ab facere labore
+              nihil earum?
             </p>
-            <a href='#' class="link-arrow">Learn more</a>
+            <a href="#" class="link-arrow">Learn more</a>
           </div>
-        
-        <img
-          class="webhost-img"
-          src="./images/support.jpg"
-          alt="Tech support 24/7"
-        />
+
+          <img
+            class="full-width"
+            src="./images/support.jpg"
+            alt="Tech support 24/7"
+          />
+        </div>
       </div>
     </main>
-    <section class="user-friendly">
-      <h2>User-friendly control panel</h2>
-      <img
-        class="user-friendly-img"
-        src="./images/ipad.png"
-        alt="User-friendly mobile"
-      />
-      <div class="user-friendly-benefits">
-        <img class="user-friendly-icon" src="./icons/snap.svg" alt="Snap" />
-        <div>
-          <h3>Easy start & managed updates</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, fugit
-            nesciunt cum perspiciatis cupiditate nulla beatae exercitationem
-            atque explicabo pariatur nam nisi numquam alias odio!
-          </p>
-        </div>
-      </div>
-      <div class="user-friendly-benefits">
-        <img class="user-friendly-icon" src="./icons/growth.svg" alt="Snap" />
-        <div>
-          <h3>Easy start & managed updates</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, fugit
-            nesciunt cum perspiciatis cupiditate nulla beatae exercitationem
-            atque explicabo pariatur nam nisi numquam alias odio!
-          </p>
-        </div>
-      </div>
-      <div class="user-friendly-benefits">
+    <section class="container--user-friendly">
+      <div class="container--narrow">
+        <h2 class="align-center">User-friendly control panel</h2>
         <img
-          class="user-friendly-icon"
-          src="./icons/wordpress.svg"
-          alt="Snap"
+          class="full-width"
+          src="./images/ipad.png"
+          alt="User-friendly mobile"
         />
-        <div>
-          <h3>Easy start & managed updates</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, fugit
-            nesciunt cum perspiciatis cupiditate nulla beatae exercitationem
-            atque explicabo pariatur nam nisi numquam alias odio!
-          </p>
+        <div class="user-friendly-benefits">
+          <svg class="icon icon--primary">
+            <use xlink:href="./icons/snap.svg#snap"></use>
+          </svg>
+          <div>
+            <h3>Easy start & managed updates</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+              fugit nesciunt cum perspiciatis cupiditate nulla beatae
+              exercitationem atque explicabo pariatur nam nisi numquam alias
+              odio!
+            </p>
+          </div>
+        </div>
+        <div class="user-friendly-benefits">
+          <svg class="icon icon--primary">
+            <use xlink:href="./icons/growth.svg#growth"></use>
+          </svg>
+          <div>
+            <h3>Easy start & managed updates</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+              fugit nesciunt cum perspiciatis cupiditate nulla beatae
+              exercitationem atque explicabo pariatur nam nisi numquam alias
+              odio!
+            </p>
+          </div>
+        </div>
+        <div class="user-friendly-benefits">
+          <svg class="icon icon--primary">
+            <use xlink:href="./icons/wordpress.svg#wordpress"></use>
+          </svg>
+          <div>
+            <h3>Easy start & managed updates</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+              fugit nesciunt cum perspiciatis cupiditate nulla beatae
+              exercitationem atque explicabo pariatur nam nisi numquam alias
+              odio!
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section class="customers">
-      <div class="section-intro">
-        <h2>What our customer are saying</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-          aspernatur!
-        </p>
-      </div>
-      <div class="customer-img">
-        <img src="./images/testimonial.jpg" alt="" />
-        <div class="customer-quotes">
-          <img
-            class="customer-quotes-icon"
-            src="./icons/quotes.svg"
-            alt="quotes"
-          />
-        </div>
-        <div class="customer-text">
+      <div class="container--narrow">
+        <div class="section-intro">
+          <h2>What our customer are saying</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-            explicabo facere voluptas, natus dolorem veritatis dolor veniam,
-            reiciendis corrupti laudantium minus ipsam? Libero ratione
-            temporibus inventore architecto, soluta maiores eveniet.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            aspernatur!
           </p>
-          <div class="customer-name">
-            <img src="./icons/line.svg" alt="line" />
-            <div>
-              <h3>Jhone Lumeo</h3>
-              <p>Mosh Company CEO</p>
+        </div>
+        <div class="customer-container box-shadow">
+          <div class="customer-container-img">
+            <img class="customer-img" src="./images/testimonial.jpg" alt="" />
+            <div class="customer-container-icon">
+              <svg class="icon customer-icon">
+                <use xlink:href="./icons/quotes.svg#quotes"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="customer-text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Distinctio explicabo facere voluptas, natus dolorem veritatis
+              dolor veniam, reiciendis corrupti laudantium minus ipsam? Libero
+              ratione temporibus inventore architecto, soluta maiores eveniet.
+            </p>
+            <div class="customer-name">
+              <img src="./icons/line.svg" alt="line" />
+              <div>
+                <h3>Jhone Lumeo</h3>
+                <p>Mosh Company CEO</p>
+              </div>
             </div>
           </div>
         </div>
