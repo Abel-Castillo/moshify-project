@@ -34,7 +34,7 @@
         </nav>
         <div class="banner">
           <div class="banner--heading">
-            <h1 class="align-center">Cloud Hosting for Pros</h1>
+            <h1>Cloud Hosting for Pros</h1>
             <p class="banner-slogan">
               Deploy your website in less than 60 seconds.
             </p>
@@ -42,13 +42,21 @@
               Get started
             </button>
           </div>
-
-          <div>
-            <img
-              class="banner-img full-width"
-              src="./images/banner.png"
-              alt="Moshify banner with web servers."
-            />
+          <div class="banner--container--img">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/banner@600px.webp  1x,
+                  ./images/banner@1200px.webp 2x
+                "
+              />
+              <img
+                class="banner-img full-width"
+                src="./images/banner.png"
+                alt="Moshify banner with web servers."
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -93,14 +101,14 @@
             <div class="card-header">
               <p class="card-name">Entry</p>
               <div class="card-cost">
-                <p>
-                  <span class="card-price">$14</span>/month<span
-                    class="btn btn--primary btn--small"
-                    >10% OFF</span
-                  >
+                <p class="card--billing--plan">
+                  <span class="card-price">$14</span
+                  ><span class="card-"
+                    ><span class="card--plan">/month</span></span
+                  ><span class="btn btn--primary btn--small">10% OFF</span>
                 </p>
               </div>
-              <p>Easy start on the cloud</p>
+              <p class="card--description">Easy start on the cloud</p>
             </div>
             <div class="card-body">
               <ul class="list--tick">
@@ -112,18 +120,18 @@
               <button class="full-width btn card-btn btn--big">Buy now</button>
             </div>
           </div>
-          <div class="card box-shadow">
+          <div class="card box-shadow card--primary">
             <div class="card-header card-header-primary">
               <p class="card-name">Business</p>
               <div class="card-cost">
-                <p>
-                  <span class="card-price">$24</span>/month<span
-                    class="btn btn--secondary btn--small"
-                    >20% OFF</span
-                  >
+                <p class="card--billing--plan">
+                  <span class="card-price">$24</span
+                  ><span class="card--plan"
+                    ><span class="card--plan">/month</span></span
+                  ><span class="btn btn--secondary btn--small">20% OFF</span>
                 </p>
               </div>
-              <p>Optimal cloud experience</p>
+              <p class="card--description">Optimal cloud experience</p>
             </div>
             <div class="card-body card-body-business">
               <ul class="list--tick">
@@ -142,14 +150,13 @@
             <div class="card-header">
               <p class="card-name">Business</p>
               <div class="card-cost">
-                <p>
-                  <span class="card-price">$54</span>/month<span
-                    class="btn btn--primary btn--small"
-                    >10% OFF</span
-                  >
+                <p class="card--billing--plan">
+                  <span class="card-price">$54</span
+                  ><span class="card--plan">/month</span
+                  ><span class="btn btn--primary btn--small">10% OFF</span>
                 </p>
               </div>
-              <p>Easy start on the cloud</p>
+              <p class="card--description">Easy start on the cloud</p>
             </div>
             <div class="card-body">
               <ul class="list--tick">

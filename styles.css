@@ -42,7 +42,7 @@ h1 {
   font-size: 7rem;
   word-spacing: 1rem;
   letter-spacing: 0.2rem;
-
+  text-align: center;
   color: #fff;
 }
 
@@ -102,11 +102,6 @@ button:hover {
 }
 .menu--list {
   display: none;
-  /* padding: 0;
-  list-style: none;
-  display: flex;
-  flex-basis: 50%;
-  justify-content: space-between; */
 }
 .logo {
   font-size: 3.7rem;
@@ -164,6 +159,7 @@ main {
 }
 .search-bar {
   border: none;
+  font-size: 2rem;
 }
 .search-bar:focus {
   outline: none;
@@ -175,6 +171,9 @@ main {
 }
 
 /*Monthly plan section */
+.monthly-plans {
+  margin: 7rem 4.5rem;
+}
 .domain-prices {
   display: grid;
   align-items: center;
@@ -205,10 +204,10 @@ main {
   background-color: #fff;
   margin-bottom: 40px;
 }
-.monthly-plans {
-  margin: 7rem 4.5rem;
-}
-.card p {
+
+.card-name,
+.card--description,
+.card--billing--plan {
   margin-bottom: 2rem;
 }
 .card-header {
@@ -216,7 +215,10 @@ main {
   color: #fff;
   padding: 3rem 4rem 1rem;
 }
-
+.card--billing--plan {
+  display: flex;
+  align-items: center;
+}
 .card-name,
 .card-price-discount {
   font-weight: bold;
@@ -418,5 +420,92 @@ a {
     padding-left: 40px;
     padding-right: 40px;
     font-size: 1.5rem;
+  }
+  .banner--heading {
+    flex-basis: 50%;
+    align-items: flex-start;
+  }
+  .banner--container--img {
+    flex-basis: 50%;
+  }
+  h1 {
+    text-align: left;
+  }
+  .monthly-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 0 2%;
+  }
+  .card-header {
+    padding: 2rem 3rem;
+  }
+  .card-name,
+  .card-body .btn,
+  .card--plan {
+    font-size: 1.4rem;
+  }
+  .card-price {
+    font-size: 5rem;
+  }
+  .card-header .btn {
+    font-size: 1.2rem;
+  }
+  .card--description,
+  .list--tick {
+    font-size: 1.8rem;
+  }
+  .card--description,
+  .card--plan,
+  .card-header .btn {
+    opacity: 80%;
+  }
+  .card {
+    margin-bottom: 0;
+    border-radius: 20px;
+  }
+  .card-header .btn {
+    padding: 5px 10px;
+  }
+  .card-name,
+  .card--description,
+  .card--billing--plan {
+    margin-bottom: 1rem;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .card--description {
+    margin: 0;
+  }
+  .list--tick {
+    margin-bottom: 0;
+  }
+  .list--tick__item {
+    margin-bottom: 2rem;
+  }
+  .card-body .btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  .card--billing--plan {
+    margin: 0;
+    line-height: 1.2;
+  }
+  .card--primary {
+    margin-bottom: 0;
+  }
+  .card-header-primary {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .card-body-business {
+    height: 360px;
   }
 }
